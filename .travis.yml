@@ -11,6 +11,10 @@ android:
     # SDK Version to compile project
     - android-26
     - android-23
+    
+before_install:
+    - git clone --depth 1 https://github.com/urho3d/android-ndk.git $HOME/android-ndk-root
+    - export ANDROID_NDK_HOME=$HOME/android-ndk-root
         
 script: ./gradlew build
 
