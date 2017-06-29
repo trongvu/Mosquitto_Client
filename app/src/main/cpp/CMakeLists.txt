@@ -5,7 +5,7 @@ add_library(libmosquittopp SHARED IMPORTED)
 set_property(TARGET libmosquittopp PROPERTY IMPORTED_LOCATION "${CMAKE_CURRENT_SOURCE_DIR}/../jniLibs/${ANDROID_ABI}/libmosquittopp.so")
 
 add_library( # Sets the name of the library.
-             native-lib
+             mosquitto_wrapper
 
              # Sets the library as a shared library.
              SHARED
