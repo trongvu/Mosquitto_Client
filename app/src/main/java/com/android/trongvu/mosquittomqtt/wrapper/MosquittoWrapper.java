@@ -9,7 +9,7 @@ import org.greenrobot.eventbus.EventBus;
 
 public class MosquittoWrapper {
     static {
-        System.loadLibrary("native-lib");
+        System.loadLibrary("mosquitto_wrapper");
     }
 
     public void on_connect(int rc) {
