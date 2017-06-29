@@ -19,6 +19,6 @@ find_library(
                 log )
 
 target_link_libraries(
-                       native-lib
+                       mosquitto_wrapper
                        libmosquittopp
                        ${log-lib} )
