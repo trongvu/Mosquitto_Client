@@ -15,6 +15,10 @@ android:
 before_install:
     - git clone --depth 1 https://github.com/urho3d/android-ndk.git $HOME/android-ndk-root
     - export ANDROID_NDK_HOME=$HOME/android-ndk-root
+    
+install:
+    - echo yes | sdkmanager "extras;m2repository;com;android;support;constraint;constraint-layout;1.0.2"
+    - echo yes | sdkmanager "extras;m2repository;com;android;support;constraint;constraint-layout-solver;1.0.2"
         
 script: ./gradlew build
 
